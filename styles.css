@@ -1,0 +1,140 @@
+/* Body Padding for Fixed Navbar */
+body,html {
+    margin: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    scroll-padding-top: 56px;
+  }
+
+  /* Padding for Mobile Devices */
+  @media (max-width: 768px) {  
+    :root {
+      scroll-padding-top: 200px; 
+    }
+  }
+
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+    
+  }
+
+  
+  /* Profile Picture */
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive: Downscale on Small Screens */
+  @media (max-width: 768px) {
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  /* General Styling for Navbar, Sections, and Footer */
+  .navbar-theme {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Navbar */
+  .navbar-theme {
+    background-color:#000 ;
+    color: #ffffff;
+  }
+  
+  .navbar-theme .nav-link,
+  .navbar-theme .navbar-brand {
+    color: #ffffff;
+  }
+  
+  .navbar-theme .nav-link:hover {
+    color: #0d6efd;
+  }
+  
+  /* Section styles */
+  section {
+    padding: 60px 0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f8f9fa;
+    color: #000;
+  }
+  
+  /* Button hover effects */
+  .btn-primary {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-1px);
+  }
+  
+  /* Additional styling for links */
+  .nav-link {
+    color: #000;
+  }
+  
+  .nav-link:hover {
+    color: #0d6efd;
+  }
+
+  #section {
+    padding-top: 100px 100px;
+  }
+  
+  .card-img-top {
+    width:100px;
+    height: 100px;
+    position: center;
+  } 
+
+  /* Arrows */
+
+  .modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #0d6efd;
+    z-index: 1056; /* Higher than modal backdrop */
+    cursor: pointer;
+  }
+  
+  .modal-nav.left {
+    left: 15px;
+  }
+  
+  .modal-nav.right {
+    right: 15px;
+  }
+  
+  .modal-nav:hover {
+    color: #0a58ca;
+  }
+
+  

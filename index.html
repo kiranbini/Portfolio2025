@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Lynn's Portfolio - Full Stack Web Developer">
+  <meta name="author" content="Lynn">
+  <meta name="keywords" content="portfolio, full stack, python, django, react, web developer">
+  <title>Lynn's Portfolio</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Animate on Scroll -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-theme navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero"><i class="bi bi-house-door me-1"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-person-circle me-1"></i>About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects"><i class="bi bi-kanban me-1"></i>Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-envelope me-1"></i>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+  <!-- Hero -->
+  <section class="py-5 pt-5 mt-5 text-center bg-primary text-white" id="hero">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4">Hi, I'm Lynn 👋</h1>
+      <p class="lead">Full Stack Developer • Python • Django • React</p> 
+      <a href="mailto:lynnkjoshua07@gmail.com" class="btn btn-light btn-lg mt-3">Email</a>
+      <a href="CV_Lynn.pdf" download="CV_Lynn.pdf" class="btn btn-light btn-lg mt-3">Download Resume</a>
+      <a href="tel:9995856844" class="btn btn-light btn-lg mt-3" aria-label="Call Lynn"><i class="bi bi-telephone-fill"></i></a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4"><i class="bi bi-person-circle me-2"></i>About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+         <img src="images/lynn_photo.jpg" alt="Lynn's profile picture" class="rounded-circle my-3 profile-pic">
+        </div>
+        <div class="col-md-8">
+         <p class="lead">Hi, I'm Lynn K Joshua – a passionate Full Stack Web Developer currently honing my skills in Python, Django, and React at TechWingSys. I enjoy bringing ideas to life through code, whether it's building intuitive web applications or experimenting with new tech stacks and software tools.</p>
+         <p class="lead"> Beyond coding, I'm also a piano enthusiast. Playing music is my way to unwind and spark creativity. I'm always curious, always learning, and excited about creating digital experiences that are both functional and fun.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+<!-- Projects Section with Carousel -->
+<section id="projects" class="py-5 bg-dark text-white">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-4"><i class="bi bi-kanban me-2"></i>My Projects</h2>
+    
+    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+      <div class="carousel-inner">
+
+        <!-- Project 1 -->
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-3">
+              <img src="images/Cooking-Illustration.jpg" class="img-fluid w-40 mx-auto d-block rounded shadow" style="max-height: 300px;" alt="Chef's Companion Screenshot">
+
+            </div>
+            <div class="col-md-6">
+              <h4 class="text-warning">Chef's Companion – Recipe Finder</h4>
+              <p>A dynamic web app that allows users to search and save recipes. Built with Django REST Framework and React.</p>
+              <ul>
+                <li>Search by ingredients</li>
+                <li>Save and favorite recipes</li>
+                <li>Responsive design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-3">
+              <img src="images/quiz_image.jpg" class="img-fluid w-40 mx-auto d-block rounded shadow" style="max-height: 300px;" alt="QuizWhiz Screenshot">
+            </div>
+            <div class="col-md-6">
+              <h4 class="text-warning">QuizWhiz – Interactive Quiz App</h4>
+              <p>An engaging quiz app with real-time scoring and category selection.</p>
+              <ul>
+                <li>Multi-category quizzes</li>
+                <li>Instant feedback</li>
+                <li>Admin panel for questions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-3">
+              <img src="images/task_tracker_image.png" class="img-fluid w-40 mx-auto d-block rounded shadow" style="max-height: 300px;" alt="TaskMaster Screenshot">
+            </div>
+            <div class="col-md-6">
+              <h4 class="text-warning">TaskMaster – Task Tracker</h4>
+              <p>A full-stack task manager app with login and real-time dashboard.</p>
+              <ul>
+                <li>User authentication</li>
+                <li>Task create, update, delete</li>
+                <li>Dashboard updates</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+  
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4"><i class="bi bi-envelope me-2"></i>Contact Me</h2>
+      <form class="w-75 mx-auto" name="contact" method="POST">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+          <label for="name">Name *</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com" required>
+          <label for="email">Email *</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" name="message" id="message" placeholder="Your message" style="height: 150px;" required></textarea>
+          <label for="message">Message *</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Lynn. Built using Bootstrap 5.</p>
+  </footer>
+</div>  <!-- Wrapper div -->
+
+<!-- JS Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
